@@ -7,6 +7,26 @@
 	</head>
 
 	<body>
+
+
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '1070173369717401',
+					xfbml      : true,
+					version    : 'v2.7'
+				});
+			};		
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.7";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+
 		<div class="logo">
 			<div class="container">
 				<p><a href="#"><img src="logo.png" alt="XYZ" width="100" height="100" >
@@ -33,7 +53,7 @@
 				<p>you can control anything by just clicking</p>
 		  </div>
 		</div>
-
+	
 
 		<div class="learn">
       <div class="container">
@@ -64,13 +84,19 @@
        </div>
 		  </div>
 
+			
+		<div class="fb-share-button" data-href="http://yoojin.azurewebsites.net" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+			<div class ="container">
+			<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fyoojin.azurewebsites.net%2F&amp;src=sdkpreparse">Sharing</a> </div>
+		</div>
 
 		<div class="details">
   		<div class="container">
-  		<p> </p>
+			<p> </p>
   		<p>By XYZ company YOOJIN HA</p>
   		<p>Email: <a href="#">hyj0522kl994@outlook.com</a></p>
   		</div>
 		</div>
 	</body>
 </html>
+
