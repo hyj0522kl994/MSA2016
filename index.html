@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-		<link rel="stylesheet" href="bootstrap.css">
-    <script src="index.js"></script>
+    <script src="index.ts"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
 	</head>
-  <!--API URL  https://api.forecast.io/forecast/5d05181bacc96545ca326b0688a1ccda/37.8267,-122.423-->
+
 	<body>
-
-
+		<!-- face book sharing function -->
 		<div id="fb-root"></div>
 		<script>
 			window.fbAsyncInit = function() {
@@ -49,11 +52,32 @@
 
 		<div class="jumbotron">
 		  <div class="container">
-				<h1>welcome to "XYZ"!</h1>
-				<p>you can control anything by just clicking</p>
+				<div id = "input">
+         <h2>Check Weather for Home Setting!</h2>
+  			 <label for="Input">CITY NAME  : </label><input id="Input" type="text" value="Enter your location" />
+					<button type="button" id="enter">Click</button> 
+				</div>
+				<div id = "Name">
+
+				</div>
+				<div id = "Temp">
+
+				</div>
+				<div id = "Humid">
+
+				</div>
+				<div id = "Wind">
+
+				</div>
+
+				<div class="fb-share-button" data-href="http://yoojin.azurewebsites.net" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+				 		<p> Show your home setting page on FACEBOOK! 
+			  		<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fyoojin.azurewebsites.net%2F&amp;src=sdkpreparse">Sharing</a></p>
+				</div>
+	
 		  </div>
 		</div>
-	
+
 
 		<div class="learn">
       <div class="container">
@@ -84,11 +108,6 @@
        </div>
 		  </div>
 
-			
-		<div class="fb-share-button" data-href="http://yoojin.azurewebsites.net" data-layout="button_count" data-size="large" data-mobile-iframe="true">
-			<div class ="container">
-			<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fyoojin.azurewebsites.net%2F&amp;src=sdkpreparse">Sharing</a> </div>
-		</div>
 
 		<div class="details">
   		<div class="container">

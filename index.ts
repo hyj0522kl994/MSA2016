@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 
-    var myButton = document.getElementById("enter");
+    let myButton = document.getElementById("enter");
 
     myButton.addEventListener("click", myFunction);
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             $("#Name").html("Please wait ..");
 
-            var input = $('#Input').val();
+            let input = $('#Input').val();
 
             if (input === "") {
                 $("#Input").html("Please Enter The City Again!");
@@ -31,5 +31,3 @@ document.addEventListener("DOMContentLoaded", function(){
             }
     }
 });
-
-
