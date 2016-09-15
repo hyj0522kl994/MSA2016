@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     myButton.addEventListener("click", myFunction);
 
-    function myFunction(){
+    function myFunction() {
 
             $("#Name").html("Please wait ..");
 
@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 $("#Input").html("Please Enter The City Again!");
             }
             else {
-                $.get("http://api.openweathermap.org/data/2.5/weather?q=" + input + "&appid=bfaf0741692b8643e450f65d24a14b79", function (data) {
+                $.get("http://api.openweathermap.org/data/2.5/weather?q=" + input + "&appid=bfaf0741692b8643e450f65d24a14b79", 
+                function (data) {
                     console.log(data);
                     if (input.toUpperCase() === data.name.toUpperCase()) {
                         $("#Name").html("City:  " + data.name + ", " + data.sys.country );
@@ -31,3 +32,4 @@ document.addEventListener("DOMContentLoaded", function(){
             }
     }
 });
+
