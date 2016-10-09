@@ -23,3 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    var myButton = document.getElementById("myBtn");
+
+    myButton.addEventListener("click", myFunction);
+
+    function myFunction(){
+
+        alert("Welcome to XYZ");
+    }
+});
