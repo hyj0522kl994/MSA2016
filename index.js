@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var myButton = document.getElementById("myBtn");
 
-    myButton.addEventListener("click", myFunction);
+    myButton.addEventListener("click", myalert);
 
-    function myFunction(){
+    function myalert(){
 
         alert("Welcome to XYZ");
     }
