@@ -1,0 +1,101 @@
+body {
+    font-size: 80%;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.15em;
+
+}
+
+.logo p {
+  height:50%;
+  padding-left: 500px;
+  border-bottom: 3px solid #bbb;
+  font-weight: bold;
+}
+.nav container{
+  list-style-type: none;
+  margin: 0;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  background-color: #ffffff;
+}
+
+.nav li{
+  display:inline;
+  float: left;
+  border-right:1px solid #bbb;
+
+}
+
+.nav li a{
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #FFA500;
+}
+
+.nav .active {
+      background-color: #FFA500;
+}
+
+.jumbotron {
+  background-image: url(ultra-modern-house.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:600px;
+}
+.jumbotron .container {
+  background-color: #808080;
+  opacity:0.8;
+  width:50%;
+  height:auto;
+  color:#FFA500;
+
+}
+.jumbotron .container p {
+  color: white;
+
+}
+
+
+.hello .row {
+  border-style: solid;
+}
+
+
+.hello .container{
+  padding-bottom: 50px;
+}
+.hello p{
+  color:#FFA500;
+}
+
+.learn .container{
+  padding-top:25px;
+  padding-bottom: 100px;
+
+}
+.learn{
+    background-color: #F5F5F5;
+}
+
+.details {
+  background-color: #808080;
+  height:100px;
+}
+.details p{
+  color:#ffffff;
+}
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12,.grid_13,.grid_14,.grid_15,.grid_16,.grid_17,.grid_18,.grid_19,.grid_20,.grid_21,.grid_22,.grid_23,.grid_24 {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}

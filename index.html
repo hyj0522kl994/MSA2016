@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+		<!-- face book sharing function -->
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '1070173369717401',
+					xfbml      : true,
+					version    : 'v2.7'
+				});
+			};		
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.7";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+
+		<div class="logo">
+			<div class="container">
+				<p><a href="#"><img src="logo.png" alt="XYZ" width="100" height="100" >
+					XYZ
+				</a></p>
+			</div>
+		</div>
+
+		<div class="nav">
+	     	  <div class="container">
+			<ul>
+			  <li><a href="click_env.html">Environment</a></li>
+			  <li><a href="green_way.html">Home Circumstance</a></li>
+			  <li><a href="#">Security</a></li>
+			  <li style="float:right"><a class="active" href="login.html">Log out</a></li>
+			  <li style="float:right"><a href="#">Ask me</a></li>
+			</ul>
+		  </div>
+		</div>
+
+		<div class="jumbotron">
+		  <div class="container">
+				<div id = "input">
+         <h2>Check Weather for Home Setting!</h2>
+  			 <label for="Input">CITY NAME  : </label><input id="Input" type="text" value="Enter your location" />
+					<button type="button" id="enter">Click</button> 
+				</div>
+				<div id = "Name">
+
+				</div>
+				<div id = "Temp">
+
+				</div>
+				<div id = "Humid">
+
+				</div>
+				<div id = "Wind">
+
+				</div>
+
+				<div class="fb-share-button" data-href="http://yoojin.azurewebsites.net" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+				 		<p> Show your home setting page on FACEBOOK! 
+			  		<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fyoojin.azurewebsites.net%2F&amp;src=sdkpreparse">Sharing</a></p>
+				</div>
+	
+		  </div>
+		</div>
+
+
+		<div class="learn">
+      <div class="container">
+    		<div class="row">
+
+    		  <div class="col-lg-4" id="env">
+      			<h3>ENVIRONMENT</h3>
+      			<p>controlling home by green way</p>
+      			<p><a href="#">Check Energy Usage</a></p>
+            <p><a href="#">Set home environmentally</a></p>
+    		  </div>
+
+    		  <div class="col-lg-4" id="cir">
+      			<h3>HOME CIRCUMSTANCE</h3>
+      			<p>Simply controlling home condition</p>
+      			<p><a href="#">temperature</a></p>
+      			<p><a href="#">humidity</a></p>
+    	    </div>
+
+    		  <div class="col-lg-4" id="sec">
+      			<h3>SECURITY</h3>
+      			<p>Be safe with systems</p>
+      			<p><a href="#">CCTV record</a></p>
+      			<p><a href="#">Door lock</a></p>
+    		  </div>
+
+    	   </div>
+       </div>
+		  </div>
+
+
+		<div class="details">
+  		<div class="container">
+			<p> </p>
+  		<p>By XYZ company YOOJIN HA</p>
+  		<p>Email: <a href="#">hyj0522kl994@outlook.com</a></p>
+  		</div>
+		</div>
+	</body>
+</html>
+
+
